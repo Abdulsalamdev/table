@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#down {
+  display: none;
+}
+#top {
+  margin-left: 100px;
+  margin-top: 50px;
+}
+.inner {
+  display: flex;
+  padding-left: 10px;
+  gap: 435px;
+}
+table {
+  padding: 20px;
+  align-items: center;
+  border-collapse: collapse;
+  margin-top: 30px;
+}
+.invoice {
+  text-align: right;
+}
+tr th {
+  padding: 10px;
+  border-bottom: 3px solid whitesmoke;
+  text-align: left;
+}
+tr td {
+  padding: 10px;
+  border-bottom: 2px solid whitesmoke;
+}
+.paid {
+  padding: 4px 5px;
+  border-radius: 10px;
+  border: 3px solid rgb(206, 231, 206);
+  background-color: rgb(218, 241, 223);
+  color: green;
+  font-size: medium;
+}
+.paid-1 {
+  padding: 4px 5px;
+  border-radius: 10px;
+  border: 3px solid rgb(206, 231, 206);
+  background-color: rgb(218, 241, 223);
+  color: green;
+  font-size: medium;
+  display: none;
+}
+.pending {
+  padding: 4px 5px;
+  border-radius: 10px;
+  font-size: medium;
+  background-color: rgb(254, 255, 186);
+  border: 3px solid rgb(250, 245, 214);
+  color: rgb(245, 180, 16);
+}
+.pending-1 {
+  padding: 4px 5px;
+  border-radius: 10px;
+  font-size: medium;
+  background-color: rgb(254, 255, 186);
+  border: 3px solid rgb(250, 245, 214);
+  color: rgb(245, 180, 16);
+  display: none;
+}
+.cancelled {
+  padding: 4px 5px;
+  border-radius: 10px;
+  font-size: medium;
+  background-color: whitesmoke;
+  color: black;
+  border: 3px solid rgb(245, 238, 238);
+}
+.cancelled-1 {
+  padding: 4px 5px;
+  border-radius: 10px;
+  font-size: medium;
+  background-color: whitesmoke;
+  color: black;
+  border: 3px solid rgb(245, 238, 238);
+  display: none;
+}
+span {
+  color: blue;
+}
+
+tr th:last-child {
+  text-align: right;
+}
+
+tr td:last-child {
+  text-align: right;
+}
+.span {
+  color: blue;
+}
+#none {
+  display: none;
+}
+.input-middle {
+  display: none;
+}
+p {
+  padding-top: 7px;
+}
+.display {
+  display: none;
+}
+@media screen and (max-width: 640px) {
+  tr .date {
+    display: none;
+  }
+  .inner {
+    gap: 280px;
+  }
+  tr td:first-child,
+  tr td:nth-child(2) {
+    display: none;
+  }
+  #none {
+    display: inline;
+  }
+  .paid-1 {
+    display: inline;
+  }
+  .cancelled-1 {
+    display: inline;
+  }
+  .none-2 {
+    display: none;
+  }
+  .pending-1 {
+    display: inline;
+  }
+  .input-middle {
+    display: block;
+  }
+  p {
+    padding-bottom: 7px;
+  }
+  #down {
+    display: none;
+  }
+  .display {
+    display: none;
+  }
+}
+@media screen and (max-width: 375px) {
+  
+}
